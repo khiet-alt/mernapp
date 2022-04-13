@@ -13,7 +13,7 @@ const app = express()
 
 // app.use: using middleware
 app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
 
 app.use('/api/goals', require('./routes/goalRoutes'))
 
