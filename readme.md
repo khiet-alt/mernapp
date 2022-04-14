@@ -3,3 +3,6 @@ useful references:
 
 backend folder
     yarn init
+
+frontend
+    npx create-react-app frontend --template redux
