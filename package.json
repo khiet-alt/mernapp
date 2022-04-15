@@ -9,7 +9,7 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"yarn run server\" \"yarn run client\" ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn add --prefix frontend && yarn run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --prefix frontend && yarn run build --prefix frontend"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
